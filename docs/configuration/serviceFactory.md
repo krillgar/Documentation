@@ -26,11 +26,11 @@ The `InMemoryFactory` allows setting up a service factory by providing in-memory
 ## Mandatory for production scenarios (but with default in-memory implementation)
 
 * `AuthorizationCodeStore`
-    * Implements storage and retrieval of authorization codes ([interface](https://github.com/thinktecture/Thinktecture.IdentityServer.v3/blob/master/source%2FCore%2FServices%2FITransientDataRepository.cs))
+    * Implements storage and retrieval of authorization codes ([interface](https://github.com/IdentityServer/IdentityServer3/blob/master/source/Core/Services/IAuthorizationCodeStore.cs))
 * `TokenHandleStore` 
-    * Implements storage and retrieval of handles for reference tokens ([interface](https://github.com/thinktecture/Thinktecture.IdentityServer.v3/blob/master/source%2FCore%2FServices%2FITransientDataRepository.cs))
+    * Implements storage and retrieval of handles for reference tokens ([interface](https://github.com/IdentityServer/IdentityServer3/blob/master/source/Core/Services/ITokenHandleStore.cs))
 * `RefreshTokenStore` 
-    * Implements storage and retrieval of refresh tokens ([interface](https://github.com/thinktecture/Thinktecture.IdentityServer.v3/blob/master/source%2FCore%2FServices%2FITransientDataRepository.cs))
+    * Implements storage and retrieval of refresh tokens ([interface](https://github.com/IdentityServer/IdentityServer3/blob/master/source/Core/Services/IRefreshTokenService.cs))
 * `ConsentStore` 
     * Implements storage and retrieval of consent decisions ([interface](https://github.com/thinktecture/Thinktecture.IdentityServer.v3/blob/master/source/Core/Services/IConsentStore.cs))
 * `ViewService`
